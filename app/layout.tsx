@@ -1,10 +1,12 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 
-const inter = Inter({ 
+const inter = Inter({
   subsets: ["latin"],
   display: 'swap',
   preload: true,
@@ -17,37 +19,57 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Goats of San Clemente",
-  description: "Goats of San Clemente - A blog about goats on San Clemente Island",
-  keywords: ["goats", "san clemente", "blog"],
-  authors: [{ name: "Goats of San Clemente" }],
-  creator: "Goats of San Clemente",
-  publisher: "Goats of San Clemente",
+  title: {
+    default: "San Clemente Wildfire Resilience Foundation | Preparedness, Prevention & Community Action",
+    template: "%s | San Clemente Wildfire Resilience Foundation",
+  },
+  description:
+    "A citizen-led San Clemente nonprofit focused on wildfire prevention, preparedness, environmental stewardship, trusted education, and community action.",
+  keywords: [
+    "San Clemente",
+    "wildfire",
+    "wildfire prevention",
+    "wildfire preparedness",
+    "fire resilience",
+    "nonprofit",
+    "community action",
+    "environmental stewardship",
+    "SCWRF",
+  ],
+  authors: [{ name: "San Clemente Wildfire Resilience Foundation" }],
+  creator: "San Clemente Wildfire Resilience Foundation",
+  publisher: "San Clemente Wildfire Resilience Foundation",
   metadataBase: new URL('https://goatsofsanclemente.com'),
   alternates: {
     canonical: '/',
+  },
+  icons: {
+    icon: '/scwrf-logo.png',
+    apple: '/scwrf-logo.png',
   },
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: 'https://goatsofsanclemente.com',
-    siteName: 'Goats of San Clemente',
-    title: 'Goats of San Clemente',
-    description: 'A blog about goats on San Clemente Island',
+    siteName: 'San Clemente Wildfire Resilience Foundation',
+    title: 'San Clemente Wildfire Resilience Foundation',
+    description:
+      'A citizen-led San Clemente nonprofit focused on wildfire prevention, preparedness, environmental stewardship, trusted education, and community action.',
     images: [
       {
-        url: '/og-image.png',
+        url: '/scwrf-logo.png',
         width: 1200,
         height: 630,
-        alt: 'Goats of San Clemente',
+        alt: 'San Clemente Wildfire Resilience Foundation',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Goats of San Clemente',
-    description: 'A blog about goats on San Clemente Island',
-    images: ['/twitter-image.png'],
+    title: 'San Clemente Wildfire Resilience Foundation',
+    description:
+      'A citizen-led San Clemente nonprofit focused on wildfire prevention, preparedness, environmental stewardship, trusted education, and community action.',
+    images: ['/scwrf-logo.png'],
   },
   robots: {
     index: true,
@@ -69,17 +91,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
-      </head>
       <body className={inter.className}>
         <Nav />
         <main className="min-h-screen">
           {children}
         </main>
         <Footer />
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
