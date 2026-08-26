@@ -3,8 +3,8 @@ import { Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
-import Nav from "./components/Nav";
-import Footer from "./components/Footer";
+import SiteHeader from "./components/SiteHeader";
+import SiteFooter from "./components/SiteFooter";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -92,11 +92,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Nav />
+        <SiteHeader />
         <main className="min-h-screen">
           {children}
         </main>
-        <Footer />
+        <SiteFooter />
         <Analytics />
         <SpeedInsights />
       </body>
