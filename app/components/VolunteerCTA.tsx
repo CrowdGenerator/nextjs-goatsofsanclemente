@@ -14,7 +14,7 @@ export default function VolunteerCTA({
   return (
     <Link
       href={href}
-      className={`inline-block bg-primary-green text-white font-semibold text-[15px] px-6 py-3 rounded-[7px] hover:bg-primary-green/90 transition-colors ${className}`.trim()}
+      className={`inline-flex items-center justify-center bg-primary-green text-white font-semibold text-[15px] px-6 py-3 rounded-[7px] min-h-[44px] hover:bg-primary-green/90 transition-colors ${className}`.trim()}
     >
       {text}
     </Link>

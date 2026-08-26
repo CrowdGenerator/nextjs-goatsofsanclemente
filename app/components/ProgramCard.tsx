@@ -13,7 +13,7 @@ export default function ProgramCard({
 }: ProgramCardProps) {
   return (
     <div
-      className={`bg-white border border-gray-200 rounded-lg p-8 ${className}`.trim()}
+      className={`bg-white border border-gray-200 rounded-lg p-5 sm:p-8 ${className}`.trim()}
     >
       {isFuture && (
         <span className="inline-block text-ochre font-bold text-xs uppercase tracking-wide mb-3">

@@ -44,7 +44,7 @@ const partners = [
 
 export default function PartnersPage() {
   return (
-    <main className="mx-auto max-w-[820px] px-6 py-16">
+    <main className="mx-auto max-w-[820px] px-4 sm:px-6 py-12 md:py-16">
       <SectionIntro title="Partners" />
 
       {/* How We Work With Partners */}

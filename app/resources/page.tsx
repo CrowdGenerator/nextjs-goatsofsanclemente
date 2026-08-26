@@ -48,7 +48,7 @@ const resources = [
 
 export default function ResourcesPage() {
   return (
-    <main className="mx-auto max-w-[1180px] px-6 py-16">
+    <main className="mx-auto max-w-[1180px] px-4 sm:px-6 py-12 md:py-16">
       <SectionIntro
         title="Resources"
         subtitle="Explore trusted resources for wildfire resilience, preparedness, and environmental stewardship in San Clemente. These organizations provide guidance, tools, and information to help residents, HOAs, and community members take practical steps."

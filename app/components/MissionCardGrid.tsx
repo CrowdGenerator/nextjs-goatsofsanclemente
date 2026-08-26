@@ -14,7 +14,7 @@ export default function MissionCardGrid({ cards, className = "" }: MissionCardGr
       {cards.map((card) => (
         <div
           key={card.title}
-          className="bg-white border border-gray-200 rounded-lg p-8"
+          className="bg-white border border-gray-200 rounded-lg p-5 sm:p-8"
         >
           <h3 className="text-primary-green font-bold text-[22px] leading-snug mb-3">
             {card.title}

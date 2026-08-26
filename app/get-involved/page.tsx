@@ -5,11 +5,11 @@ import VolunteerCTA from "../components/VolunteerCTA";
 
 export default function GetInvolvedPage() {
   return (
-    <main className="mx-auto max-w-[820px] px-6 py-16">
+    <main className="mx-auto max-w-[820px] px-4 sm:px-6 py-12 md:py-16">
       <SectionIntro title="Get Involved" />
 
       {/* Volunteer Section */}
-      <section className="py-16">
+      <section className="py-10 md:py-16">
         <SectionIntro title="Volunteer With Us" />
         <p className="text-muted-gray text-[17px] leading-[1.6] max-w-[680px]">
           The Foundation is building a network of dedicated volunteers who care
@@ -27,7 +27,7 @@ export default function GetInvolvedPage() {
       </section>
 
       {/* Community & Partner Interest Form */}
-      <section className="py-16">
+      <section className="py-10 md:py-16">
         <SectionIntro title="Community & Partner Interest" />
         <p className="text-muted-gray text-[17px] leading-[1.6] max-w-[680px] mb-8">
           Interested in learning more, partnering, or volunteering? Fill out the
@@ -51,7 +51,7 @@ export default function GetInvolvedPage() {
               id="name"
               name="name"
               required
-              className="w-full rounded-[7px] border border-gray-300 px-4 py-2.5 text-[15px] text-gray-900 placeholder-gray-400 focus:border-primary-green focus:ring-2 focus:ring-primary-green/20 focus:outline-none transition-colors"
+              className="w-full rounded-[7px] border border-gray-300 px-4 py-3 text-[16px] text-gray-900 placeholder-gray-400 focus:border-primary-green focus:ring-2 focus:ring-primary-green/20 focus:outline-none transition-colors min-h-[44px]"
               placeholder="Your name"
             />
           </div>
@@ -69,7 +69,7 @@ export default function GetInvolvedPage() {
               id="email"
               name="email"
               required
-              className="w-full rounded-[7px] border border-gray-300 px-4 py-2.5 text-[15px] text-gray-900 placeholder-gray-400 focus:border-primary-green focus:ring-2 focus:ring-primary-green/20 focus:outline-none transition-colors"
+              className="w-full rounded-[7px] border border-gray-300 px-4 py-3 text-[16px] text-gray-900 placeholder-gray-400 focus:border-primary-green focus:ring-2 focus:ring-primary-green/20 focus:outline-none transition-colors min-h-[44px]"
               placeholder="you@example.com"
             />
           </div>
@@ -85,7 +85,7 @@ export default function GetInvolvedPage() {
             <select
               id="interest-type"
               name="interest-type"
-              className="w-full rounded-[7px] border border-gray-300 px-4 py-2.5 text-[15px] text-gray-900 bg-white focus:border-primary-green focus:ring-2 focus:ring-primary-green/20 focus:outline-none transition-colors"
+              className="w-full rounded-[7px] border border-gray-300 px-4 py-3 text-[16px] text-gray-900 bg-white focus:border-primary-green focus:ring-2 focus:ring-primary-green/20 focus:outline-none transition-colors min-h-[44px]"
             >
               <option value="volunteer">Volunteer</option>
               <option value="partner">Partner</option>
@@ -105,7 +105,7 @@ export default function GetInvolvedPage() {
               id="message"
               name="message"
               rows={5}
-              className="w-full rounded-[7px] border border-gray-300 px-4 py-2.5 text-[15px] text-gray-900 placeholder-gray-400 focus:border-primary-green focus:ring-2 focus:ring-primary-green/20 focus:outline-none transition-colors resize-y"
+              className="w-full rounded-[7px] border border-gray-300 px-4 py-3 text-[16px] text-gray-900 placeholder-gray-400 focus:border-primary-green focus:ring-2 focus:ring-primary-green/20 focus:outline-none transition-colors resize-y min-h-[120px]"
               placeholder="Tell us how you'd like to get involved..."
             />
           </div>
@@ -114,7 +114,7 @@ export default function GetInvolvedPage() {
           <div>
             <button
               type="submit"
-              className="inline-block bg-primary-green text-white font-semibold text-[15px] px-6 py-3 rounded-[7px] hover:bg-primary-green/90 transition-colors cursor-pointer"
+              className="inline-flex items-center justify-center bg-primary-green text-white font-semibold text-[15px] px-6 py-3 rounded-[7px] min-h-[44px] hover:bg-primary-green/90 transition-colors cursor-pointer"
             >
               Submit
             </button>

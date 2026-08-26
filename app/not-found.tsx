@@ -14,7 +14,7 @@ const helpfulLinks = [
 
 export default function NotFound() {
   return (
-    <section className="py-24 md:py-32 px-6 bg-white">
+    <section className="py-16 md:py-32 px-4 sm:px-6 bg-white">
       <div className="mx-auto max-w-[600px] text-center">
         <h1 className="text-primary-green mb-6">Page Not Found</h1>
 

@@ -14,7 +14,7 @@ export default function MapPlaceholder({ className = "" }: MapPlaceholderProps) 
         alt="SCWRF Logo"
         width={120}
         height={120}
-        className="mb-4 opacity-60"
+        className="mb-4 opacity-60 max-w-full h-auto"
       />
       <p className="text-primary-green font-bold text-lg mb-1">
         MAP GOES HERE

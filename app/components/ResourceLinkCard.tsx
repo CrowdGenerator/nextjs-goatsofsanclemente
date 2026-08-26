@@ -20,7 +20,7 @@ export default function ResourceLinkCard({
 
   return (
     <div
-      className={`bg-white border border-gray-200 rounded-lg p-6 ${className}`.trim()}
+      className={`bg-white border border-gray-200 rounded-lg p-5 sm:p-6 ${className}`.trim()}
     >
       <h4 className="text-primary-green font-bold text-lg mb-2">{title}</h4>
       <p className="text-body-charcoal text-base leading-relaxed mb-4">

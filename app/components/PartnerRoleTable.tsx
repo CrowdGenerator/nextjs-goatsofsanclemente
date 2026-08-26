@@ -51,7 +51,7 @@ export default function PartnerRoleTable({
               Row {i + 1}
             </div>
             <div className="bg-white px-4 py-3 border-b border-gray-200">
-              <span className="block text-xs font-semibold text-muted-gray uppercase tracking-wide mb-1">
+              <span className="block text-[13px] font-semibold text-muted-gray uppercase tracking-wide mb-1">
                 The Foundation Helps
               </span>
               <span className="text-body-charcoal text-[15px]">
@@ -59,7 +59,7 @@ export default function PartnerRoleTable({
               </span>
             </div>
             <div className="bg-soft-neutral px-4 py-3">
-              <span className="block text-xs font-semibold text-muted-gray uppercase tracking-wide mb-1">
+              <span className="block text-[13px] font-semibold text-muted-gray uppercase tracking-wide mb-1">
                 Partners Retain
               </span>
               <span className="text-body-charcoal text-[15px]">

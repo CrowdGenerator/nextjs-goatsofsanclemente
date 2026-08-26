@@ -80,14 +80,14 @@ export default function ContactPage() {
   return (
     <article>
       {/* Page Title */}
-      <section className="py-16 md:py-24 px-6">
+      <section className="py-10 md:py-24 px-4 sm:px-6">
         <div className="content-reading">
           <h1>Contact Us</h1>
         </div>
       </section>
 
       {/* Intro + Form */}
-      <section className="pb-16 md:pb-24 px-6">
+      <section className="pb-12 md:pb-24 px-4 sm:px-6">
         <div className="content-reading">
           <p className="text-body-charcoal text-[17px] leading-relaxed">
             Have questions about the Foundation, wildfire resilience, or how to

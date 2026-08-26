@@ -18,7 +18,7 @@ export default function Hero({
   secondaryCta = { label: "Get Involved", href: "/get-involved" },
 }: HeroProps) {
   return (
-    <section className="bg-white py-24 px-4 sm:px-6 lg:px-8">
+    <section className="bg-white py-12 md:py-24 px-4 sm:px-6 lg:px-8">
       <div className="content-hero">
         {eyebrow && (
           <p className="eyebrow mb-4">{eyebrow}</p>

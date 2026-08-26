@@ -64,7 +64,7 @@ export default function SiteHeader() {
         {/* Mobile hamburger */}
         <button
           type="button"
-          className="md:hidden inline-flex items-center justify-center p-2 rounded-md text-body-charcoal hover:bg-pale-green transition-colors"
+          className="md:hidden inline-flex items-center justify-center min-h-[44px] min-w-[44px] p-2 rounded-md text-body-charcoal hover:bg-pale-green transition-colors"
           aria-label={menuOpen ? "Close menu" : "Open menu"}
           aria-expanded={menuOpen}
           onClick={() => setMenuOpen((prev) => !prev)}
@@ -90,7 +90,7 @@ export default function SiteHeader() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setMenuOpen(false)}
-                className="px-3 py-2 text-base font-medium text-body-charcoal hover:text-primary-green hover:bg-pale-green rounded-md no-underline transition-colors"
+                className="px-3 py-3 text-base font-medium text-body-charcoal hover:text-primary-green hover:bg-pale-green rounded-md no-underline transition-colors min-h-[44px] flex items-center"
               >
                 {link.label}
               </Link>
@@ -98,7 +98,7 @@ export default function SiteHeader() {
             <Link
               href="/contact"
               onClick={() => setMenuOpen(false)}
-              className="px-3 py-2 text-sm text-muted-gray hover:text-primary-green hover:bg-pale-green rounded-md no-underline transition-colors"
+              className="px-3 py-3 text-sm text-muted-gray hover:text-primary-green hover:bg-pale-green rounded-md no-underline transition-colors min-h-[44px] flex items-center"
             >
               Contact
             </Link>
@@ -106,7 +106,7 @@ export default function SiteHeader() {
               <Link
                 href="/donate"
                 onClick={() => setMenuOpen(false)}
-                className="btn-primary w-full !text-sm"
+                className="btn-primary w-full !text-sm min-h-[44px]"
               >
                 Donate
               </Link>

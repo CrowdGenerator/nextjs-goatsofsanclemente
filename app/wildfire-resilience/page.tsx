@@ -14,15 +14,15 @@ export default function WildfireResiliencePage() {
   return (
     <article>
       {/* Section 1 — Page Title */}
-      <section className="py-16 bg-white">
-        <div className="content-reading px-6">
+      <section className="py-12 md:py-16 bg-white">
+        <div className="content-reading px-4 sm:px-6">
           <h1 className="text-primary-green">Wildfire Resilience</h1>
         </div>
       </section>
 
       {/* Section 2 — Why Resilience Matters */}
-      <section className="py-16 bg-soft-neutral">
-        <div className="content-reading px-6">
+      <section className="py-12 md:py-16 bg-soft-neutral">
+        <div className="content-reading px-4 sm:px-6">
           <SectionIntro title="Why Resilience Matters" />
           <p className="text-body-charcoal text-[17px] leading-relaxed">
             San Clemente neighborhoods sit near coastal canyons, open space, and
@@ -35,8 +35,8 @@ export default function WildfireResiliencePage() {
       </section>
 
       {/* Section 3 — The Local Context */}
-      <section className="py-16 bg-white">
-        <div className="content-reading px-6">
+      <section className="py-12 md:py-16 bg-white">
+        <div className="content-reading px-4 sm:px-6">
           <LocalContextPanel
             title="The Local Context"
             content={
@@ -56,8 +56,8 @@ export default function WildfireResiliencePage() {
       </section>
 
       {/* Section 4 — From Wildfire Prevention to Wildfire Resilience */}
-      <section className="py-16 bg-soft-neutral">
-        <div className="content-reading px-6">
+      <section className="py-12 md:py-16 bg-soft-neutral">
+        <div className="content-reading px-4 sm:px-6">
           <SectionIntro title="From Wildfire Prevention to Wildfire Resilience" />
           <p className="text-body-charcoal text-[17px] leading-relaxed">
             Wildfire prevention is essential, but resilience goes further. It
@@ -77,8 +77,8 @@ export default function WildfireResiliencePage() {
       </section>
 
       {/* Section 5 — In Practical Terms */}
-      <section className="py-16 bg-white">
-        <div className="content-reading px-6">
+      <section className="py-12 md:py-16 bg-white">
+        <div className="content-reading px-4 sm:px-6">
           <SectionIntro title="In Practical Terms" />
           <PracticalStepsList
             items={[
@@ -92,8 +92,8 @@ export default function WildfireResiliencePage() {
       </section>
 
       {/* Section 6 — Why the Foundation Matters */}
-      <section className="py-16 bg-soft-neutral">
-        <div className="content-reading px-6">
+      <section className="py-12 md:py-16 bg-soft-neutral">
+        <div className="content-reading px-4 sm:px-6">
           <SectionIntro title="Why the Foundation Matters" />
           <VisionCallout>
             <p>

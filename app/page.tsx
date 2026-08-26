@@ -19,7 +19,7 @@ export default function Home() {
       />
 
       {/* ── 2. Why This Matters ── */}
-      <section className="bg-soft-neutral py-20 px-4 sm:px-6 lg:px-8">
+      <section className="bg-soft-neutral py-12 md:py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <SectionIntro
             title="Why a Grassroots Wildfire Resilience Organization"
@@ -44,7 +44,7 @@ export default function Home() {
       </section>
 
       {/* ── 3. What Wildfire Resilience Means ── */}
-      <section className="bg-white py-20 px-4 sm:px-6 lg:px-8">
+      <section className="bg-white py-12 md:py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <SectionIntro
             title="From Wildfire Prevention to Wildfire Resilience"
@@ -63,7 +63,7 @@ export default function Home() {
       </section>
 
       {/* ── 4. Our Mission ── */}
-      <section className="bg-soft-neutral py-20 px-4 sm:px-6 lg:px-8">
+      <section className="bg-soft-neutral py-12 md:py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <SectionIntro title="Our Guiding Framework" />
 
@@ -90,7 +90,7 @@ export default function Home() {
       </section>
 
       {/* ── 5. How We Help ── */}
-      <section className="bg-white py-20 px-4 sm:px-6 lg:px-8">
+      <section className="bg-white py-12 md:py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <SectionIntro title="How We Help" />
 
@@ -112,7 +112,7 @@ export default function Home() {
       </section>
 
       {/* ── 6. Programs We Hope to Build ── */}
-      <section className="bg-soft-neutral py-20 px-4 sm:px-6 lg:px-8">
+      <section className="bg-soft-neutral py-12 md:py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <SectionIntro
             title="Programs We Hope to Build"
@@ -144,7 +144,7 @@ export default function Home() {
       </section>
 
       {/* ── 7. Core Values ── */}
-      <section className="bg-white py-24 px-4 sm:px-6 lg:px-8">
+      <section className="bg-white py-12 md:py-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <SectionIntro
             title="Core Values"

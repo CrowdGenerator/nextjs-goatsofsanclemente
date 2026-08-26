@@ -78,14 +78,14 @@ export default function AboutPage() {
   return (
     <article>
       {/* 1. Page Title */}
-      <section className="py-16 md:py-24 px-6">
+      <section className="py-10 md:py-24 px-4 sm:px-6">
         <div className="content-reading">
           <h1>About the Foundation</h1>
         </div>
       </section>
 
       {/* 2. Vision Section */}
-      <section className="py-16 md:py-20 px-6">
+      <section className="py-10 md:py-20 px-4 sm:px-6">
         <div className="content-reading">
           <VisionCallout label="VISION | THE FUTURE WE SEEK">
             A wildfire-resilient San Clemente where informed residents, healthy
@@ -96,7 +96,7 @@ export default function AboutPage() {
       </section>
 
       {/* 3. Purpose Section */}
-      <section className="py-16 md:py-20 px-6">
+      <section className="py-10 md:py-20 px-4 sm:px-6">
         <div className="content-reading">
           <SectionIntro title="PURPOSE | WHY WE EXIST" />
           <p className="text-body-charcoal text-lg leading-relaxed font-semibold mt-4">
@@ -112,7 +112,7 @@ export default function AboutPage() {
       </section>
 
       {/* 4. Mission Section */}
-      <section className="py-16 md:py-20 px-6">
+      <section className="py-10 md:py-20 px-4 sm:px-6">
         <div className="content-reading">
           <SectionIntro title="MISSION | WHAT WE DO" />
           <p className="text-body-charcoal text-lg leading-relaxed font-semibold mt-4">
@@ -131,7 +131,7 @@ export default function AboutPage() {
       <GuidingIdeaBanner text="Make wildfire resilience clear, practical, and part of daily life — not only an emergency concern." />
 
       {/* 6. Organizational Role */}
-      <section className="py-16 md:py-24 px-6">
+      <section className="py-12 md:py-24 px-4 sm:px-6">
         <div className="content-reading">
           <SectionIntro
             title="How We Work With the City, OCFA, HOAs, Schools and Other Partners"
@@ -144,7 +144,7 @@ export default function AboutPage() {
       </section>
 
       {/* 7. Core Values */}
-      <section className="py-16 md:py-24 px-6">
+      <section className="py-12 md:py-24 px-4 sm:px-6">
         <div className="content-reading">
           <SectionIntro title="Core Values" />
         </div>
@@ -154,7 +154,7 @@ export default function AboutPage() {
       </section>
 
       {/* 8. Our Focus */}
-      <section className="py-16 md:py-20 px-6">
+      <section className="py-10 md:py-20 px-4 sm:px-6">
         <div className="content-reading">
           <SectionIntro title="Our Focus" />
           <p className="text-body-charcoal text-[17px] leading-relaxed mt-4">
@@ -166,7 +166,7 @@ export default function AboutPage() {
       </section>
 
       {/* 9. Board / Leadership */}
-      <section className="py-16 md:py-24 px-6 bg-soft-neutral">
+      <section className="py-12 md:py-24 px-4 sm:px-6 bg-soft-neutral">
         <div className="content-reading">
           <SectionIntro title="Leadership" />
         </div>

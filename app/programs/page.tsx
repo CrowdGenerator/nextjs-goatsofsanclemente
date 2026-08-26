@@ -10,7 +10,7 @@ export const metadata = {
 
 export default function ProgramsPage() {
   return (
-    <main className="mx-auto max-w-[820px] px-6 py-16">
+    <main className="mx-auto max-w-[820px] px-4 sm:px-6 py-12 md:py-16">
       <SectionIntro title="Programs" />
 
       <FutureProgramNotice className="mb-12" />
