@@ -62,32 +62,32 @@ const coreValues = [
   {
     title: "Community First",
     description:
-      "We are nonpartisan and serve all of San Clemente. Every resident, neighborhood, and partner matters in building wildfire resilience.",
+      "We are nonpartisan and serve all of San Clemente. We give residents safe and useful ways to volunteer and help their community.",
   },
   {
     title: "Facts and Trusted Guidance",
     description:
-      "We use and share state law, agency guidance, and reliable facts. Our education is clear, accurate, and easy to act on.",
+      "We use and share state law, agency guidance, and reliable facts. This helps people understand their choices and make informed decisions.",
   },
   {
     title: "Care for Nature",
     description:
-      "We speak up for wildfire prevention that also protects native plants and habitat. Healthy landscapes and safe communities go hand in hand.",
+      "We speak up for wildfire prevention that also protects native plants and habitat. We promote good care of open space. We do not clear land or plant landscaping.",
   },
   {
     title: "Clear Roles",
     description:
-      "We work with the City, OCFA, HOAs, schools, and other partners — each with their own authority. The Foundation connects, supports, and advocates without replacing anyone's role.",
+      "We work with the City, OCFA, HOAs, schools, and other partners. We respect each group\u2019s role and do not replace public agencies or contractors.",
   },
   {
     title: "Safe and Useful Volunteer Service",
     description:
-      "Every volunteer role will have a clear purpose, safe steps, and responsible leaders. We prepare people before they serve and support them while they serve.",
+      "Every volunteer role will have a clear purpose, safe steps, and responsible leaders. We use time, money, and other resources with care.",
   },
   {
     title: "Start Small and Grow With Care",
     description:
-      "We start with work we can do well and grow as trust, resources, and community readiness allow. Quality and accountability come before speed.",
+      "We start with work we can do well. We learn as we go and grow only when we have the people, partners, and funds to do it right.",
   },
 ];
 

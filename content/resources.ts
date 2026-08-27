@@ -15,7 +15,7 @@ export const resources: Resource[] = [
     title: "Firewise USA",
     description:
       "A national program that helps neighborhoods organize, recognize, and take action to reduce wildfire risk through community-based prevention.",
-    href: "https://www.nfpa.org/public-education-and-research/wildfire/firewise-usa",
+    href: "https://www.nfpa.org/education-and-research/wildfire/firewise-usa",
   },
   {
     title: "City of San Clemente",
@@ -33,7 +33,7 @@ export const resources: Resource[] = [
     title: "Zone Zero",
     description:
       "California's Zone Zero program establishes defensible space requirements around homes and structures to reduce wildfire risk.",
-    href: "https://zonezero.fire.ca.gov/",
+    href: "https://bof.fire.ca.gov/projects-and-programs/defensible-space-zones-0-1-and-2",
   },
   {
     title: "Ready.gov Wildfires",
