@@ -180,15 +180,15 @@ export default function AboutPage() {
                 <div className="w-28 h-28 mx-auto mb-4 rounded-full overflow-hidden bg-pale-green flex items-center justify-center">
                   <Image
                     src="/scwrf-logo.png"
-                    alt={`${member.name} — ${member.title}`}
+                    alt={`${member.name}, ${member.title} — placeholder photo`}
                     width={112}
                     height={112}
                     className="object-contain"
                   />
                 </div>
-                <h4 className="text-primary-green font-bold text-[18px] leading-snug">
+                <h3 className="text-primary-green font-bold text-[18px] leading-snug">
                   {member.name}
-                </h4>
+                </h3>
                 <p className="text-muted-gray text-[15px] mt-1">
                   {member.title}
                 </p>

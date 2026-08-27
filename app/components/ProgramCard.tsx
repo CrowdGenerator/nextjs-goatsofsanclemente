@@ -2,6 +2,7 @@ interface ProgramCardProps {
   title: string;
   description: string;
   isFuture: boolean;
+  headingLevel?: "h2" | "h3";
   className?: string;
 }
 
@@ -9,8 +10,10 @@ export default function ProgramCard({
   title,
   description,
   isFuture,
+  headingLevel = "h3",
   className = "",
 }: ProgramCardProps) {
+  const HeadingTag = headingLevel;
   return (
     <div
       className={`bg-white border border-gray-200 rounded-lg p-5 sm:p-8 ${className}`.trim()}
@@ -20,9 +23,9 @@ export default function ProgramCard({
           Future / Developing
         </span>
       )}
-      <h3 className="text-primary-green font-bold text-[22px] leading-snug mb-3">
+      <HeadingTag className="text-primary-green font-bold text-[22px] leading-snug mb-3">
         {title}
-      </h3>
+      </HeadingTag>
       <p className="text-body-charcoal text-[17px] leading-relaxed mb-0">
         {description}
       </p>

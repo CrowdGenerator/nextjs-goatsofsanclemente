@@ -22,7 +22,7 @@ export default function ResourceLinkCard({
     <div
       className={`bg-white border border-gray-200 rounded-lg p-5 sm:p-6 ${className}`.trim()}
     >
-      <h4 className="text-primary-green font-bold text-lg mb-2">{title}</h4>
+      <h2 className="text-primary-green font-bold text-lg mb-2">{title}</h2>
       <p className="text-body-charcoal text-base leading-relaxed mb-4">
         {description}
       </p>
@@ -32,6 +32,7 @@ export default function ResourceLinkCard({
         className="text-primary-green font-medium text-[15px] hover:underline inline-block"
       >
         Learn More →
+        {isExternal && <span className="sr-only"> (opens in new tab)</span>}
       </Link>
     </div>
   );

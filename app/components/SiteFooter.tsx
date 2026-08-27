@@ -35,7 +35,7 @@ export default function SiteFooter() {
             <Link href="/" className="inline-flex items-center gap-2 no-underline" aria-label="Home">
               <Image
                 src="/scwrf-logo.png"
-                alt="SCWRF Logo"
+                alt="San Clemente Wildfire Resilience Foundation logo"
                 width={40}
                 height={40}
                 className="h-10 w-auto"
@@ -47,8 +47,8 @@ export default function SiteFooter() {
           </div>
 
           {/* Quick Links */}
-          <div>
-            <h4 className="small-text text-primary-green mb-3">Quick Links</h4>
+          <nav aria-label="Footer quick links">
+            <h2 className="small-text text-primary-green mb-3">Quick Links</h2>
             <ul className="flex flex-col gap-2">
               {quickLinks.map((link) => (
                 <li key={link.href}>
@@ -61,11 +61,11 @@ export default function SiteFooter() {
                 </li>
               ))}
             </ul>
-          </div>
+          </nav>
 
           {/* Partner Links */}
-          <div>
-            <h4 className="small-text text-primary-green mb-3">Partners</h4>
+          <nav aria-label="Footer partner links">
+            <h2 className="small-text text-primary-green mb-3">Partners</h2>
             <ul className="flex flex-col gap-2">
               {partnerLinks.map((link) => (
                 <li key={link.href}>
@@ -76,15 +76,16 @@ export default function SiteFooter() {
                     className="text-body-charcoal hover:text-primary-green no-underline text-sm"
                   >
                     {link.label}
+                    <span className="sr-only"> (opens in new tab)</span>
                   </a>
                 </li>
               ))}
             </ul>
-          </div>
+          </nav>
 
           {/* Contact */}
           <div>
-            <h4 className="small-text text-primary-green mb-3">Contact</h4>
+            <h2 className="small-text text-primary-green mb-3">Contact</h2>
             <a
               href="mailto:hello@goatsofsanclemente.com"
               className="text-sm text-body-charcoal hover:text-primary-green no-underline block"
@@ -99,21 +100,23 @@ export default function SiteFooter() {
           <p className="caption mb-0">
             &copy; {currentYear} San Clemente Wildfire Resilience Foundation
           </p>
-          <div className="flex items-center gap-4">
-            <Link
-              href="#"
-              className="caption hover:text-primary-green no-underline"
-            >
-              Privacy
-            </Link>
-            <Link
-              href="#"
-              className="caption hover:text-primary-green no-underline"
-            >
-              Terms
-            </Link>
-            <span className="caption">EIN: XX-XXXXXXX</span>
-          </div>
+          <nav aria-label="Footer legal links">
+            <div className="flex items-center gap-4">
+              <Link
+                href="#"
+                className="caption hover:text-primary-green no-underline"
+              >
+                Privacy
+              </Link>
+              <Link
+                href="#"
+                className="caption hover:text-primary-green no-underline"
+              >
+                Terms
+              </Link>
+              <span className="caption">EIN: XX-XXXXXXX</span>
+            </div>
+          </nav>
         </div>
       </div>
     </footer>

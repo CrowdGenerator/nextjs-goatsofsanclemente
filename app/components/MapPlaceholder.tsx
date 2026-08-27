@@ -11,10 +11,11 @@ export default function MapPlaceholder({ className = "" }: MapPlaceholderProps) 
     >
       <Image
         src="/scwrf-logo.png"
-        alt="SCWRF Logo"
+        alt=""
         width={120}
         height={120}
         className="mb-4 opacity-60 max-w-full h-auto"
+        aria-hidden="true"
       />
       <p className="text-primary-green font-bold text-lg mb-1">
         MAP GOES HERE

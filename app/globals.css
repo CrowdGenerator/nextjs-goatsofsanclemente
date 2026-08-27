@@ -10,7 +10,7 @@
   /* --- Color Tokens --- */
   --color-primary-green: #28583F;
   --color-secondary-green: #517A51;
-  --color-ochre: #B8741A;
+  --color-ochre: #8F5B15;
   --color-body-charcoal: #2D302E;
   --color-muted-gray: #676C68;
   --color-pale-green: #E6EEE8;
@@ -49,7 +49,7 @@
 :root {
   --color-primary-green: #28583F;
   --color-secondary-green: #517A51;
-  --color-ochre: #B8741A;
+  --color-ochre: #8F5B15;
   --color-body-charcoal: #2D302E;
   --color-muted-gray: #676C68;
   --color-pale-green: #E6EEE8;
@@ -348,12 +348,60 @@ a:focus-visible {
 }
 
 /* ==========================================================================
-   Accessibility — Focus Visible Global
-   ========================================================================== */
+    Accessibility — Focus Visible Global
+    ========================================================================== */
 
 *:focus-visible {
   outline: 2px solid var(--color-primary-green);
   outline-offset: 2px;
+}
+
+/* ==========================================================================
+    Accessibility — Skip Link
+    ========================================================================== */
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: 100;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--color-white);
+  background-color: var(--color-primary-green);
+  padding: 12px 24px;
+  border-radius: var(--radius-btn);
+}
+
+.skip-link:focus {
+  position: fixed;
+  left: 16px;
+  top: 16px;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  outline: 3px solid var(--color-primary-green);
+  outline-offset: 3px;
+}
+
+/* ==========================================================================
+    Accessibility — Visually Hidden (screen-reader only)
+    ========================================================================== */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
 }
 
 /* ==========================================================================

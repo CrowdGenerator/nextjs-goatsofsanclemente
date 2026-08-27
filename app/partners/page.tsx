@@ -1,12 +1,11 @@
 import Image from "next/image";
-import SectionIntro from "../components/SectionIntro";
 import PartnerRoleTable from "../components/PartnerRoleTable";
 import PartnerCTA from "../components/PartnerCTA";
 
 export const metadata = {
-  title: "Partners | San Clemente Wildlife & River Foundation",
+  title: "Partners",
   description:
-    "Partners of the San Clemente Wildlife & River Foundation — working together with residents, the City, OCFA, HOAs, schools, and community organizations for wildfire resilience.",
+    "Partners of the San Clemente Wildfire Resilience Foundation — working together with residents, the City, OCFA, HOAs, schools, and community organizations for wildfire resilience.",
 };
 
 const partnerRows = [
@@ -44,8 +43,13 @@ const partners = [
 
 export default function PartnersPage() {
   return (
-    <main className="mx-auto max-w-[820px] px-4 sm:px-6 py-12 md:py-16">
-      <SectionIntro title="Partners" />
+    <article>
+      <section className="py-10 md:py-16 px-4 sm:px-6">
+        <div className="content-reading">
+          <h1>Partners</h1>
+        </div>
+      </section>
+      <div className="mx-auto max-w-[820px] px-4 sm:px-6 pb-12 md:pb-16">
 
       {/* How We Work With Partners */}
       <section className="mb-10">
@@ -129,6 +133,7 @@ export default function PartnersPage() {
         buttonText="Get in Touch"
         buttonHref="/contact"
       />
-    </main>
+      </div>
+    </article>
   );
 }

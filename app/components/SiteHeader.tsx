@@ -24,7 +24,7 @@ export default function SiteHeader() {
         <Link href="/" className="flex items-center gap-2 shrink-0" aria-label="Home">
           <Image
             src="/scwrf-logo.png"
-            alt="SCWRF Logo"
+            alt="San Clemente Wildfire Resilience Foundation logo"
             width={44}
             height={44}
             className="h-[44px] w-auto"

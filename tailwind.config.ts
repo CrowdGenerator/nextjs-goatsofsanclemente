@@ -17,7 +17,7 @@
  *   @theme {
  *     --color-primary-green: #28583F;
  *     --color-secondary-green: #517A51;
- *     --color-ochre: #B8741A;
+ *     --color-ochre: #8F5B15;
  *     --color-body-charcoal: #2D302E;
  *     --color-muted-gray: #676C68;
  *     --color-pale-green: #E6EEE8;
@@ -50,7 +50,7 @@ const config: Config = {
       colors: {
         "primary-green": "#28583F",
         "secondary-green": "#517A51",
-        ochre: "#B8741A",
+        ochre: "#8F5B15",
         "body-charcoal": "#2D302E",
         "muted-gray": "#676C68",
         "pale-green": "#E6EEE8",

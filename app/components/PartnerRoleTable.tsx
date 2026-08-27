@@ -46,10 +46,9 @@ export default function PartnerRoleTable({
           <div
             key={i}
             className="border border-gray-200 rounded-lg overflow-hidden"
+            role="group"
+            aria-label={`Role ${i + 1} of ${rows.length}`}
           >
-            <div className="bg-sage-panel px-4 py-2 font-bold text-body-charcoal text-sm">
-              Row {i + 1}
-            </div>
             <div className="bg-white px-4 py-3 border-b border-gray-200">
               <span className="block text-[13px] font-semibold text-muted-gray uppercase tracking-wide mb-1">
                 The Foundation Helps

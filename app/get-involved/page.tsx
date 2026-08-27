@@ -5,8 +5,13 @@ import VolunteerCTA from "../components/VolunteerCTA";
 
 export default function GetInvolvedPage() {
   return (
-    <main className="mx-auto max-w-[820px] px-4 sm:px-6 py-12 md:py-16">
-      <SectionIntro title="Get Involved" />
+    <article>
+      <section className="py-10 md:py-16 px-4 sm:px-6">
+        <div className="content-reading">
+          <h1>Get Involved</h1>
+        </div>
+      </section>
+      <div className="mx-auto max-w-[820px] px-4 sm:px-6 pb-12 md:pb-16">
 
       {/* Volunteer Section */}
       <section className="py-10 md:py-16">
@@ -44,7 +49,7 @@ export default function GetInvolvedPage() {
               htmlFor="name"
               className="block text-sm font-medium text-gray-800 mb-1.5"
             >
-              Name <span className="text-red-600">*</span>
+              Name <span aria-hidden="true" className="text-red-600">*</span>
             </label>
             <input
               type="text"
@@ -62,7 +67,7 @@ export default function GetInvolvedPage() {
               htmlFor="email"
               className="block text-sm font-medium text-gray-800 mb-1.5"
             >
-              Email <span className="text-red-600">*</span>
+              Email <span aria-hidden="true" className="text-red-600">*</span>
             </label>
             <input
               type="email"
@@ -121,6 +126,7 @@ export default function GetInvolvedPage() {
           </div>
         </form>
       </section>
-    </main>
+      </div>
+    </article>
   );
 }

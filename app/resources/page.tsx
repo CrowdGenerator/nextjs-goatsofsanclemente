@@ -1,8 +1,7 @@
-import SectionIntro from "../components/SectionIntro";
 import ResourceLinkCard from "../components/ResourceLinkCard";
 
 export const metadata = {
-  title: "Resources | San Clemente Wildlife & River Foundation",
+  title: "Resources",
   description:
     "Trusted resources for wildfire resilience, preparedness, and environmental stewardship in San Clemente.",
 };
@@ -48,11 +47,16 @@ const resources = [
 
 export default function ResourcesPage() {
   return (
-    <main className="mx-auto max-w-[1180px] px-4 sm:px-6 py-12 md:py-16">
-      <SectionIntro
-        title="Resources"
-        subtitle="Explore trusted resources for wildfire resilience, preparedness, and environmental stewardship in San Clemente. These organizations provide guidance, tools, and information to help residents, HOAs, and community members take practical steps."
-      />
+    <article>
+      <section className="py-10 md:py-16 px-4 sm:px-6">
+        <div className="content-reading">
+          <h1>Resources</h1>
+          <p className="mt-3 text-muted-gray text-[17px] leading-[1.6] max-w-[680px]">
+            Explore trusted resources for wildfire resilience, preparedness, and environmental stewardship in San Clemente. These organizations provide guidance, tools, and information to help residents, HOAs, and community members take practical steps.
+          </p>
+        </div>
+      </section>
+      <div className="mx-auto max-w-[1180px] px-4 sm:px-6 pb-12 md:pb-16">
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {resources.map((resource) => (
@@ -64,6 +68,7 @@ export default function ResourcesPage() {
           />
         ))}
       </div>
-    </main>
+      </div>
+    </article>
   );
 }

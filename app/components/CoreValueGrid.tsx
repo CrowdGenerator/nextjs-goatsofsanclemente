@@ -16,9 +16,9 @@ export default function CoreValueGrid({ values, className = "" }: CoreValueGridP
           key={value.title}
           className="bg-soft-neutral border border-gray-200 rounded-lg p-6"
         >
-          <h4 className="text-primary-green font-bold text-[19px] leading-snug mb-2">
+          <h3 className="text-primary-green font-bold text-[19px] leading-snug mb-2">
             {value.title}
-          </h4>
+          </h3>
           <p className="text-body-charcoal text-[17px] leading-relaxed mb-0">
             {value.description}
           </p>

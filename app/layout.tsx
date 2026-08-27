@@ -15,7 +15,7 @@ const inter = Inter({
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
-  themeColor: '#ea580c',
+  themeColor: '#28583F',
 };
 
 export const metadata: Metadata = {
@@ -92,8 +92,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} overflow-x-hidden`}>
+        <a href="#main-content" className="skip-link">
+          Skip to main content
+        </a>
         <SiteHeader />
-        <main className="min-h-screen">
+        <main id="main-content" className="min-h-screen">
           {children}
         </main>
         <SiteFooter />
