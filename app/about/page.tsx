@@ -7,9 +7,25 @@ import PartnerRoleTable from "../components/PartnerRoleTable";
 import CoreValueGrid from "../components/CoreValueGrid";
 
 export const metadata: Metadata = {
-  title: "About the Foundation",
+  title: "About Us | San Clemente Wildfire Resilience Foundation",
   description:
-    "Learn about the San Clemente Wildfire Resilience Foundation — our vision, mission, purpose, core values, leadership, and how we work with city partners to build a wildfire-resilient community.",
+    "Learn about the San Clemente Wildfire Resilience Foundation's vision, mission, core values, and role as a community connector for wildfire preparedness.",
+  alternates: { canonical: "/about" },
+  openGraph: {
+    title: "About Us | San Clemente Wildfire Resilience Foundation",
+    description:
+      "Learn about the San Clemente Wildfire Resilience Foundation's vision, mission, core values, and role as a community connector for wildfire preparedness.",
+    url: "https://goatsofsanclemente.com/about",
+    type: "website",
+    images: [{ url: "/scwrf-logo.png", alt: "San Clemente Wildfire Resilience Foundation" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Us | San Clemente Wildfire Resilience Foundation",
+    description:
+      "Learn about the San Clemente Wildfire Resilience Foundation's vision, mission, core values, and role as a community connector for wildfire preparedness.",
+    images: ["/scwrf-logo.png"],
+  },
 };
 
 const boardMembers = [

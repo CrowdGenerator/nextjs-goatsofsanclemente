@@ -1,10 +1,27 @@
+import type { Metadata } from "next";
 import FutureProgramNotice from "../components/FutureProgramNotice";
 import ProgramCard from "../components/ProgramCard";
 
-export const metadata = {
-  title: "Programs",
+export const metadata: Metadata = {
+  title: "Programs | San Clemente Wildfire Resilience Foundation",
   description:
-    "Future program ideas from the San Clemente Wildfire Resilience Foundation — community education, environmental stewardship, and youth learning.",
+    "Explore future community education, environmental stewardship, and youth learning programs being developed by the San Clemente Wildfire Resilience Foundation.",
+  alternates: { canonical: "/programs" },
+  openGraph: {
+    title: "Programs | San Clemente Wildfire Resilience Foundation",
+    description:
+      "Explore future community education, environmental stewardship, and youth learning programs being developed by the San Clemente Wildfire Resilience Foundation.",
+    url: "https://goatsofsanclemente.com/programs",
+    type: "website",
+    images: [{ url: "/scwrf-logo.png", alt: "San Clemente Wildfire Resilience Foundation" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Programs | San Clemente Wildfire Resilience Foundation",
+    description:
+      "Explore future community education, environmental stewardship, and youth learning programs being developed by the San Clemente Wildfire Resilience Foundation.",
+    images: ["/scwrf-logo.png"],
+  },
 };
 
 export default function ProgramsPage() {

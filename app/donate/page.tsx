@@ -2,9 +2,23 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Donate",
+  title: "Donate | San Clemente Wildfire Resilience Foundation",
   description:
-    "Support the San Clemente Wildfire Resilience Foundation. Our secure donation platform is coming soon — learn how your contributions will help build a wildfire-resilient community.",
+    "Support the San Clemente Wildfire Resilience Foundation. Donation platform coming soon.",
+  alternates: { canonical: "/donate" },
+  openGraph: {
+    title: "Donate | San Clemente Wildfire Resilience Foundation",
+    description: "Support the San Clemente Wildfire Resilience Foundation. Donation platform coming soon.",
+    url: "https://goatsofsanclemente.com/donate",
+    type: "website",
+    images: [{ url: "/scwrf-logo.png", alt: "San Clemente Wildfire Resilience Foundation" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Donate | San Clemente Wildfire Resilience Foundation",
+    description: "Support the San Clemente Wildfire Resilience Foundation. Donation platform coming soon.",
+    images: ["/scwrf-logo.png"],
+  },
 };
 
 export default function DonatePage() {

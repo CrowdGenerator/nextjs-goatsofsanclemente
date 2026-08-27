@@ -84,6 +84,21 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "NonprofitOrganization",
+  "name": "San Clemente Wildfire Resilience Foundation",
+  "description": "A citizen-led nonprofit for wildfire prevention, preparedness, stewardship and community action",
+  "url": "https://goatsofsanclemente.com",
+  "logo": "https://goatsofsanclemente.com/scwrf-logo.png",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "San Clemente",
+    "addressRegion": "CA"
+  },
+  "email": "hello@goatsofsanclemente.com"
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -92,6 +107,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} overflow-x-hidden`}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <a href="#main-content" className="skip-link">
           Skip to main content
         </a>

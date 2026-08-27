@@ -5,9 +5,25 @@ import PracticalStepsList from "../components/PracticalStepsList";
 import VisionCallout from "../components/VisionCallout";
 
 export const metadata: Metadata = {
-  title: "Wildfire Resilience",
+  title: "Wildfire Resilience | San Clemente Wildfire Resilience Foundation",
   description:
-    "Wildfire resilience in San Clemente — understanding risk, reducing hazards, and building community preparedness through education, defensible space, and shared action.",
+    "Understanding wildfire resilience in San Clemente — local hazard context, practical steps for home hardening, defensible space, and community preparedness.",
+  alternates: { canonical: "/wildfire-resilience" },
+  openGraph: {
+    title: "Wildfire Resilience | San Clemente Wildfire Resilience Foundation",
+    description:
+      "Understanding wildfire resilience in San Clemente — local hazard context, practical steps for home hardening, defensible space, and community preparedness.",
+    url: "https://goatsofsanclemente.com/wildfire-resilience",
+    type: "website",
+    images: [{ url: "/scwrf-logo.png", alt: "San Clemente Wildfire Resilience Foundation" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Wildfire Resilience | San Clemente Wildfire Resilience Foundation",
+    description:
+      "Understanding wildfire resilience in San Clemente — local hazard context, practical steps for home hardening, defensible space, and community preparedness.",
+    images: ["/scwrf-logo.png"],
+  },
 };
 
 export default function WildfireResiliencePage() {

@@ -1,9 +1,26 @@
+import type { Metadata } from "next";
 import ResourceLinkCard from "../components/ResourceLinkCard";
 
-export const metadata = {
-  title: "Resources",
+export const metadata: Metadata = {
+  title: "Resources | San Clemente Wildfire Resilience Foundation",
   description:
-    "Trusted resources for wildfire resilience, preparedness, and environmental stewardship in San Clemente.",
+    "Trusted wildfire resilience resources for San Clemente residents — Firewise USA, CAL FIRE, OCFA, defensible space guides, and home hardening information.",
+  alternates: { canonical: "/resources" },
+  openGraph: {
+    title: "Resources | San Clemente Wildfire Resilience Foundation",
+    description:
+      "Trusted wildfire resilience resources for San Clemente residents — Firewise USA, CAL FIRE, OCFA, defensible space guides, and home hardening information.",
+    url: "https://goatsofsanclemente.com/resources",
+    type: "website",
+    images: [{ url: "/scwrf-logo.png", alt: "San Clemente Wildfire Resilience Foundation" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Resources | San Clemente Wildfire Resilience Foundation",
+    description:
+      "Trusted wildfire resilience resources for San Clemente residents — Firewise USA, CAL FIRE, OCFA, defensible space guides, and home hardening information.",
+    images: ["/scwrf-logo.png"],
+  },
 };
 
 const resources = [

@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Hero from "./components/Hero";
 import SectionIntro from "./components/SectionIntro";
 import LocalContextPanel from "./components/LocalContextPanel";
@@ -6,6 +7,28 @@ import MissionCardGrid from "./components/MissionCardGrid";
 import ProgramCard from "./components/ProgramCard";
 import FutureProgramNotice from "./components/FutureProgramNotice";
 import CoreValueGrid from "./components/CoreValueGrid";
+
+export const metadata: Metadata = {
+  title: "San Clemente Wildfire Resilience Foundation | Preparedness, Prevention & Community Action",
+  description:
+    "A citizen-led San Clemente nonprofit focused on wildfire prevention, preparedness, environmental stewardship, trusted education, and community action.",
+  alternates: { canonical: "/" },
+  openGraph: {
+    title: "San Clemente Wildfire Resilience Foundation | Preparedness, Prevention & Community Action",
+    description:
+      "A citizen-led San Clemente nonprofit focused on wildfire prevention, preparedness, environmental stewardship, trusted education, and community action.",
+    url: "https://goatsofsanclemente.com/",
+    type: "website",
+    images: [{ url: "/scwrf-logo.png", alt: "San Clemente Wildfire Resilience Foundation" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "San Clemente Wildfire Resilience Foundation | Preparedness, Prevention & Community Action",
+    description:
+      "A citizen-led San Clemente nonprofit focused on wildfire prevention, preparedness, environmental stewardship, trusted education, and community action.",
+    images: ["/scwrf-logo.png"],
+  },
+};
 
 export default function Home() {
   return (

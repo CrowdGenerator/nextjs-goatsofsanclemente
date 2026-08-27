@@ -1,11 +1,28 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import PartnerRoleTable from "../components/PartnerRoleTable";
 import PartnerCTA from "../components/PartnerCTA";
 
-export const metadata = {
-  title: "Partners",
+export const metadata: Metadata = {
+  title: "Partners | San Clemente Wildfire Resilience Foundation",
   description:
-    "Partners of the San Clemente Wildfire Resilience Foundation — working together with residents, the City, OCFA, HOAs, schools, and community organizations for wildfire resilience.",
+    "Learn how the San Clemente Wildfire Resilience Foundation works with the City, OCFA, HOAs, schools, and community organizations.",
+  alternates: { canonical: "/partners" },
+  openGraph: {
+    title: "Partners | San Clemente Wildfire Resilience Foundation",
+    description:
+      "Learn how the San Clemente Wildfire Resilience Foundation works with the City, OCFA, HOAs, schools, and community organizations.",
+    url: "https://goatsofsanclemente.com/partners",
+    type: "website",
+    images: [{ url: "/scwrf-logo.png", alt: "San Clemente Wildfire Resilience Foundation" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Partners | San Clemente Wildfire Resilience Foundation",
+    description:
+      "Learn how the San Clemente Wildfire Resilience Foundation works with the City, OCFA, HOAs, schools, and community organizations.",
+    images: ["/scwrf-logo.png"],
+  },
 };
 
 const partnerRows = [
