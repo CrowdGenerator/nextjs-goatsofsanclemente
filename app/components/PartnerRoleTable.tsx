@@ -18,10 +18,10 @@ export default function PartnerRoleTable({
       <table className="hidden md:table w-full border-collapse border border-gray-200 text-left">
         <thead>
           <tr>
-            <th className="bg-sage-panel font-bold text-body-charcoal border border-gray-200 px-4 py-3 w-1/2">
+            <th className="bg-sage-panel font-bold text-body-charcoal border border-gray-200 p-3 sm:p-4 w-1/2">
               The Foundation Helps
             </th>
-            <th className="bg-sage-panel font-bold text-body-charcoal border border-gray-200 px-4 py-3 w-1/2">
+            <th className="bg-sage-panel font-bold text-body-charcoal border border-gray-200 p-3 sm:p-4 w-1/2">
               Partners Retain
             </th>
           </tr>
@@ -29,10 +29,10 @@ export default function PartnerRoleTable({
         <tbody>
           {rows.map((row, i) => (
             <tr key={i} className={i % 2 === 1 ? "bg-soft-neutral" : "bg-white"}>
-              <td className="border border-gray-200 px-4 py-3 text-body-charcoal">
+              <td className="border border-gray-200 p-3 sm:p-4 text-body-charcoal">
                 {row.foundation}
               </td>
-              <td className="border border-gray-200 px-4 py-3 text-body-charcoal">
+              <td className="border border-gray-200 p-3 sm:p-4 text-body-charcoal">
                 {row.partners}
               </td>
             </tr>
@@ -49,7 +49,7 @@ export default function PartnerRoleTable({
             role="group"
             aria-label={`Role ${i + 1} of ${rows.length}`}
           >
-            <div className="bg-white px-4 py-3 border-b border-gray-200">
+            <div className="bg-white p-3 sm:p-4 border-b border-gray-200">
               <span className="block text-[13px] font-semibold text-muted-gray uppercase tracking-wide mb-1">
                 The Foundation Helps
               </span>
@@ -57,7 +57,7 @@ export default function PartnerRoleTable({
                 {row.foundation}
               </span>
             </div>
-            <div className="bg-soft-neutral px-4 py-3">
+            <div className="bg-soft-neutral p-3 sm:p-4">
               <span className="block text-[13px] font-semibold text-muted-gray uppercase tracking-wide mb-1">
                 Partners Retain
               </span>

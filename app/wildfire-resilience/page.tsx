@@ -32,14 +32,14 @@ export default function WildfireResiliencePage() {
     <article>
       {/* Section 1 — Page Title */}
       <section className="py-12 md:py-16 bg-white">
-        <div className="content-reading px-4 sm:px-6">
+        <div className="content-hero mx-auto px-4 sm:px-6">
           <h1 className="text-primary-green">Wildfire Resilience</h1>
         </div>
       </section>
 
       {/* Section 2 — Why Resilience Matters */}
       <section className="py-12 md:py-16 bg-soft-neutral">
-        <div className="content-reading px-4 sm:px-6">
+        <div className="content-hero mx-auto px-4 sm:px-6">
           <SectionIntro title="Why Resilience Matters" />
           <p className="text-body-charcoal text-[17px] leading-relaxed">
             San Clemente neighborhoods sit near coastal canyons, open space, and
@@ -53,7 +53,7 @@ export default function WildfireResiliencePage() {
 
       {/* Section 3 — The Local Context */}
       <section className="py-12 md:py-16 bg-white">
-        <div className="content-reading px-4 sm:px-6">
+        <div className="content-hero mx-auto px-4 sm:px-6">
           <LocalContextPanel
             title="The Local Context"
             content={
@@ -74,7 +74,7 @@ export default function WildfireResiliencePage() {
 
       {/* Section 4 — From Wildfire Prevention to Wildfire Resilience */}
       <section className="py-12 md:py-16 bg-soft-neutral">
-        <div className="content-reading px-4 sm:px-6">
+        <div className="content-hero mx-auto px-4 sm:px-6">
           <SectionIntro title="From Wildfire Prevention to Wildfire Resilience" />
           <p className="text-body-charcoal text-[17px] leading-relaxed">
             Wildfire prevention is essential, but resilience goes further. It
@@ -100,7 +100,7 @@ export default function WildfireResiliencePage() {
 
       {/* Section 5 — In Practical Terms */}
       <section className="py-12 md:py-16 bg-white">
-        <div className="content-reading px-4 sm:px-6">
+        <div className="content-hero mx-auto px-4 sm:px-6">
           <SectionIntro title="In Practical Terms" />
           <PracticalStepsList
             items={[
@@ -115,7 +115,7 @@ export default function WildfireResiliencePage() {
 
       {/* Section 5b — Explore Resources */}
       <section className="py-8 md:py-10 bg-soft-neutral">
-        <div className="content-reading px-4 sm:px-6">
+        <div className="content-hero mx-auto px-4 sm:px-6">
           <p className="text-body-charcoal text-[17px] leading-relaxed">
             <Link href="/resources" className="text-primary-green hover:underline font-medium">
               Explore wildfire resilience resources for San Clemente residents — defensible space guides, home hardening information, and more →
@@ -126,7 +126,7 @@ export default function WildfireResiliencePage() {
 
       {/* Section 6 — Why the Foundation Matters */}
       <section className="py-12 md:py-16 bg-white">
-        <div className="content-reading px-4 sm:px-6">
+        <div className="content-hero mx-auto px-4 sm:px-6">
           <SectionIntro title="Why the Foundation Matters" />
           <VisionCallout>
             <p>

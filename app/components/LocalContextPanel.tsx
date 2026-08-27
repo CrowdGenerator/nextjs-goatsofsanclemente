@@ -21,7 +21,7 @@ export default function LocalContextPanel({
 }: LocalContextPanelProps) {
   return (
     <div
-      className={`bg-pale-green rounded-lg p-5 sm:p-8 md:p-12 ${className}`.trim()}
+      className={`bg-pale-green rounded-lg p-4 sm:p-6 md:p-8 ${className}`.trim()}
     >
       <h3 className="text-primary-green font-bold text-xl mb-4">{title}</h3>
 

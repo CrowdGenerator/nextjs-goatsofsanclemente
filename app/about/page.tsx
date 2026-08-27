@@ -95,15 +95,15 @@ export default function AboutPage() {
   return (
     <article>
       {/* 1. Page Title */}
-      <section className="py-10 md:py-24 px-4 sm:px-6">
-        <div className="content-reading">
+      <section className="py-12 md:py-16 px-4 sm:px-6">
+        <div className="content-hero mx-auto">
           <h1>About the Foundation</h1>
         </div>
       </section>
 
       {/* 2. Vision Section */}
-      <section className="py-10 md:py-20 px-4 sm:px-6">
-        <div className="content-reading">
+      <section className="py-12 md:py-16 px-4 sm:px-6">
+        <div className="content-hero mx-auto">
           <VisionCallout label="VISION | THE FUTURE WE SEEK">
             A wildfire-resilient San Clemente where informed residents, healthy
             native landscapes, strong partnerships, and shared preparation
@@ -113,8 +113,8 @@ export default function AboutPage() {
       </section>
 
       {/* 3. Purpose Section */}
-      <section className="py-10 md:py-20 px-4 sm:px-6">
-        <div className="content-reading">
+      <section className="py-12 md:py-16 px-4 sm:px-6">
+        <div className="content-hero mx-auto">
           <SectionIntro title="PURPOSE | WHY WE EXIST" />
           <p className="text-body-charcoal text-lg leading-relaxed font-semibold mt-4">
             Keep wildfire resilience a community priority.
@@ -129,8 +129,8 @@ export default function AboutPage() {
       </section>
 
       {/* 4. Mission Section */}
-      <section className="py-10 md:py-20 px-4 sm:px-6">
-        <div className="content-reading">
+      <section className="py-12 md:py-16 px-4 sm:px-6">
+        <div className="content-hero mx-auto">
           <SectionIntro title="MISSION | WHAT WE DO" />
           <p className="text-body-charcoal text-lg leading-relaxed font-semibold mt-4">
             Educate, connect and mobilize the community.
@@ -148,31 +148,31 @@ export default function AboutPage() {
       <GuidingIdeaBanner text="Make wildfire resilience clear, practical, and part of daily life — not only an emergency concern." />
 
       {/* 6. Organizational Role */}
-      <section className="py-12 md:py-24 px-4 sm:px-6">
-        <div className="content-reading">
+      <section className="py-12 md:py-16 px-4 sm:px-6">
+        <div className="content-hero mx-auto">
           <SectionIntro
             title="How We Work With the City, OCFA, HOAs, Schools and Other Partners"
             subtitle="The Foundation is San Clemente's nonprofit community connector and advocate."
           />
         </div>
-        <div className="content-wide mt-8">
+        <div className="content-hero mx-auto mt-8">
           <PartnerRoleTable rows={partnerRoleRows} />
         </div>
       </section>
 
       {/* 7. Core Values */}
-      <section className="py-12 md:py-24 px-4 sm:px-6">
-        <div className="content-reading">
+      <section className="py-12 md:py-16 px-4 sm:px-6">
+        <div className="content-hero mx-auto">
           <SectionIntro title="Core Values" />
         </div>
-        <div className="content-wide mt-8">
+        <div className="content-hero mx-auto mt-8">
           <CoreValueGrid values={coreValues} />
         </div>
       </section>
 
       {/* 8. Our Focus */}
-      <section className="py-10 md:py-20 px-4 sm:px-6">
-        <div className="content-reading">
+      <section className="py-12 md:py-16 px-4 sm:px-6">
+        <div className="content-hero mx-auto">
           <SectionIntro title="Our Focus" />
           <p className="text-body-charcoal text-[17px] leading-relaxed mt-4">
             We focus on San Clemente. We connect residents and partners, support
@@ -188,11 +188,11 @@ export default function AboutPage() {
       </section>
 
       {/* 9. Board / Leadership */}
-      <section className="py-12 md:py-24 px-4 sm:px-6 bg-soft-neutral">
-        <div className="content-reading">
+      <section className="py-12 md:py-16 px-4 sm:px-6 bg-soft-neutral">
+        <div className="content-hero mx-auto">
           <SectionIntro title="Leadership" />
         </div>
-        <div className="content-wide mt-8">
+        <div className="content-hero mx-auto mt-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {boardMembers.map((member) => (
               <div

@@ -7,15 +7,15 @@ import VolunteerCTA from "../components/VolunteerCTA";
 export default function GetInvolvedPage() {
   return (
     <article>
-      <section className="py-10 md:py-16 px-4 sm:px-6">
-        <div className="content-reading">
+      <section className="py-12 md:py-16 px-4 sm:px-6 lg:px-8">
+        <div className="content-hero mx-auto">
           <h1>Get Involved</h1>
         </div>
       </section>
-      <div className="mx-auto max-w-[820px] px-4 sm:px-6 pb-12 md:pb-16">
+      <div className="content-hero mx-auto px-4 sm:px-6 lg:px-8 pb-12 md:pb-16">
 
       {/* Volunteer Section */}
-      <section className="py-10 md:py-16">
+      <section className="py-12 md:py-16">
         <SectionIntro title="Volunteer With Us" />
         <p className="text-muted-gray text-[17px] leading-[1.6] max-w-[680px]">
           The Foundation is building a network of dedicated wildfire volunteers in San Clemente who care
@@ -43,7 +43,7 @@ export default function GetInvolvedPage() {
       </section>
 
       {/* Support Us */}
-      <section className="py-10 md:py-16">
+      <section className="py-12 md:py-16">
         <SectionIntro title="Support the Foundation" />
         <p className="text-muted-gray text-[17px] leading-[1.6] max-w-[680px]">
           You can also support San Clemente wildfire resilience by{" "}
@@ -55,7 +55,7 @@ export default function GetInvolvedPage() {
       </section>
 
       {/* Community & Partner Interest Form */}
-      <section className="py-10 md:py-16">
+      <section className="py-12 md:py-16">
         <SectionIntro title="Community & Partner Interest" />
         <p className="text-muted-gray text-[17px] leading-[1.6] max-w-[680px] mb-8">
           Interested in learning more, partnering, or volunteering? Fill out the

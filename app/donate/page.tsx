@@ -25,15 +25,15 @@ export default function DonatePage() {
   return (
     <article>
       {/* Hero / Header */}
-      <section className="py-12 md:py-24 px-4 sm:px-6 bg-pale-green">
-        <div className="max-w-3xl mx-auto text-center">
+      <section className="py-12 md:py-16 px-4 sm:px-6 bg-pale-green">
+        <div className="content-hero mx-auto text-center">
           <h1 className="text-primary-green">Support the Foundation</h1>
         </div>
       </section>
 
       {/* Coming Soon Message */}
-      <section className="py-16 md:py-32 px-4 sm:px-6">
-        <div className="max-w-3xl mx-auto text-center">
+      <section className="py-12 md:py-16 px-4 sm:px-6">
+        <div className="content-hero mx-auto text-center">
           <h2 className="text-primary-green mb-6">
             Donation Platform Coming Soon
           </h2>
@@ -46,8 +46,8 @@ export default function DonatePage() {
       </section>
 
       {/* What Your Support Will Help Build */}
-      <section className="py-12 md:py-20 px-4 sm:px-6 bg-soft-neutral">
-        <div className="max-w-3xl mx-auto text-center">
+      <section className="py-12 md:py-16 px-4 sm:px-6 bg-soft-neutral">
+        <div className="content-hero mx-auto text-center">
           <h3 className="text-secondary-green mb-4">
             What Your Support Will Help Build
           </h3>
@@ -61,8 +61,8 @@ export default function DonatePage() {
       </section>
 
       {/* Alternative CTA */}
-      <section className="py-16 md:py-32 px-4 sm:px-6">
-        <div className="max-w-3xl mx-auto text-center">
+      <section className="py-12 md:py-16 px-4 sm:px-6">
+        <div className="content-hero mx-auto text-center">
           <p className="text-body-charcoal text-lg leading-relaxed mb-8">
             In the meantime, you can get involved by volunteering or partnering
             with us.

@@ -7,7 +7,7 @@ export default function FutureProgramNotice({
 }: FutureProgramNoticeProps) {
   return (
     <div
-      className={`bg-pale-green border-l-4 border-primary-green rounded-lg p-5 sm:p-6 md:p-8 ${className}`.trim()}
+      className={`bg-pale-green border-l-4 border-primary-green rounded-lg p-4 sm:p-6 md:p-8 ${className}`.trim()}
     >
       <h3 className="text-primary-green font-bold text-lg mb-3">
         Important Note

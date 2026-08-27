@@ -66,15 +66,15 @@ const resources = [
 export default function ResourcesPage() {
   return (
     <article>
-      <section className="py-10 md:py-16 px-4 sm:px-6">
-        <div className="content-reading">
+      <section className="py-12 md:py-16 px-4 sm:px-6">
+        <div className="content-hero mx-auto">
           <h1>Resources</h1>
           <p className="mt-3 text-muted-gray text-[17px] leading-[1.6] max-w-[680px]">
             Explore trusted resources for wildfire resilience, preparedness, and environmental stewardship in San Clemente. These organizations provide guidance, tools, and information to help residents, HOAs, and community members take practical steps.
           </p>
         </div>
       </section>
-      <div className="mx-auto max-w-[1180px] px-4 sm:px-6 pb-12 md:pb-16">
+      <div className="content-hero mx-auto px-4 sm:px-6 pb-12 md:pb-16">
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {resources.map((resource) => (
@@ -88,7 +88,7 @@ export default function ResourcesPage() {
       </div>
 
       {/* Internal link to Wildfire Resilience */}
-      <div className="mt-12 max-w-[820px] mx-auto">
+      <div className="mt-12 content-hero mx-auto">
         <p className="text-body-charcoal text-[17px] leading-relaxed">
           Want to understand how these resources connect to San Clemente?{" "}
           <Link href="/wildfire-resilience" className="text-primary-green hover:underline font-medium">

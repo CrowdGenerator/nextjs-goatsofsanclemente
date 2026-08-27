@@ -80,15 +80,15 @@ export default function ContactPage() {
   return (
     <article>
       {/* Page Title */}
-      <section className="py-10 md:py-24 px-4 sm:px-6">
-        <div className="content-reading">
+      <section className="py-12 md:py-16 px-4 sm:px-6">
+        <div className="content-hero mx-auto">
           <h1>Contact Us</h1>
         </div>
       </section>
 
       {/* Intro + Form */}
-      <section className="pb-12 md:pb-24 px-4 sm:px-6">
-        <div className="content-reading">
+      <section className="pb-12 md:pb-16 px-4 sm:px-6">
+        <div className="content-hero mx-auto">
           <p className="text-body-charcoal text-[17px] leading-relaxed">
             Have questions about the Foundation, wildfire resilience, or how to
             get involved? We'd love to hear from you. Fill out the form below

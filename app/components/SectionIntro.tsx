@@ -6,7 +6,7 @@ interface SectionIntroProps {
 
 export default function SectionIntro({ title, subtitle, className = "" }: SectionIntroProps) {
   return (
-    <div className={`mt-16 md:mt-24 mb-8 ${className}`.trim()}>
+    <div className={`mt-12 md:mt-16 mb-6 ${className}`.trim()}>
       <h2 className="text-primary-green font-bold text-[clamp(28px,3.5vw,34px)] leading-[1.2] tracking-[-0.01em]">
         {title}
       </h2>

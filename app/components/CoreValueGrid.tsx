@@ -14,7 +14,7 @@ export default function CoreValueGrid({ values, className = "" }: CoreValueGridP
       {values.map((value) => (
         <div
           key={value.title}
-          className="bg-soft-neutral border border-gray-200 rounded-lg p-6"
+          className="bg-soft-neutral border border-gray-200 rounded-lg p-4 sm:p-6"
         >
           <h3 className="text-primary-green font-bold text-[19px] leading-snug mb-2">
             {value.title}

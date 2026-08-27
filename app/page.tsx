@@ -43,8 +43,8 @@ export default function Home() {
       />
 
       {/* ── 2. Why This Matters ── */}
-      <section className="bg-soft-neutral py-12 md:py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
+      <section className="bg-soft-neutral py-12 md:py-16 px-4 sm:px-6 lg:px-8">
+        <div className="content-hero mx-auto">
           <SectionIntro
             title="Why a Grassroots Wildfire Resilience Organization"
             subtitle="San Clemente neighborhoods sit near coastal canyons, open space, and wildland plants. Public agencies provide expertise, emergency response, and public safety. But many choices that shape San Clemente wildfire preparedness happen at homes, schools, businesses, HOAs, and open spaces. These choices matter every day, long before a fire starts."
@@ -68,8 +68,8 @@ export default function Home() {
       </section>
 
       {/* ── 3. What Wildfire Resilience Means ── */}
-      <section className="bg-white py-12 md:py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
+      <section className="bg-white py-12 md:py-16 px-4 sm:px-6 lg:px-8">
+        <div className="content-hero mx-auto">
           <SectionIntro
             title="From Wildfire Prevention to Wildfire Resilience"
             subtitle="Wildfire prevention is essential, but resilience goes further. It means helping the whole community reduce risk and prepare before a fire starts. Residents, HOAs, schools, businesses, nonprofit groups, public agencies, and landscape contractors all have a part to play."
@@ -93,8 +93,8 @@ export default function Home() {
       </section>
 
       {/* ── 4. Our Mission ── */}
-      <section className="bg-soft-neutral py-12 md:py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
+      <section className="bg-soft-neutral py-12 md:py-16 px-4 sm:px-6 lg:px-8">
+        <div className="content-hero mx-auto">
           <SectionIntro title="Our Guiding Framework" />
 
           <MissionCardGrid
@@ -120,8 +120,8 @@ export default function Home() {
       </section>
 
       {/* ── 5. How We Help ── */}
-      <section className="bg-white py-12 md:py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
+      <section className="bg-white py-12 md:py-16 px-4 sm:px-6 lg:px-8">
+        <div className="content-hero mx-auto">
           <SectionIntro title="How We Help" />
 
           <div className="max-w-[680px] space-y-6">
@@ -142,8 +142,8 @@ export default function Home() {
       </section>
 
       {/* ── 6. Programs We Hope to Build ── */}
-      <section className="bg-soft-neutral py-12 md:py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
+      <section className="bg-soft-neutral py-12 md:py-16 px-4 sm:px-6 lg:px-8">
+        <div className="content-hero mx-auto">
           <SectionIntro
             title="Programs We Hope to Build"
             subtitle="These are long-term ideas, not current promises. The Foundation will start small and grow with care."
@@ -180,8 +180,8 @@ export default function Home() {
       </section>
 
       {/* ── 7. Core Values ── */}
-      <section className="bg-white py-12 md:py-24 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
+      <section className="bg-white py-12 md:py-16 px-4 sm:px-6 lg:px-8">
+        <div className="content-hero mx-auto">
           <SectionIntro
             title="Core Values"
             subtitle="The principles that guide everything we do."

@@ -62,12 +62,12 @@ const partners = [
 export default function PartnersPage() {
   return (
     <article>
-      <section className="py-10 md:py-16 px-4 sm:px-6">
-        <div className="content-reading">
+      <section className="py-12 md:py-16 px-4 sm:px-6 lg:px-8">
+        <div className="content-hero mx-auto">
           <h1>Partners</h1>
         </div>
       </section>
-      <div className="mx-auto max-w-[820px] px-4 sm:px-6 pb-12 md:pb-16">
+      <div className="content-hero mx-auto px-4 sm:px-6 lg:px-8 pb-12 md:pb-16">
 
       {/* How We Work With Partners */}
       <section className="mb-10">
