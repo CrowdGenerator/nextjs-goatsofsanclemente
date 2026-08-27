@@ -66,7 +66,7 @@ const resources = [
 export default function ResourcesPage() {
   return (
     <article>
-      <section className="py-12 md:py-16 px-4 sm:px-6">
+      <section className="bg-white py-12 md:py-16 px-4 sm:px-6 lg:px-8">
         <div className="content-hero mx-auto">
           <h1>Resources</h1>
           <p className="mt-3 text-muted-gray text-[17px] leading-[1.6] max-w-[680px]">
@@ -74,29 +74,32 @@ export default function ResourcesPage() {
           </p>
         </div>
       </section>
-      <div className="content-hero mx-auto px-4 sm:px-6 pb-12 md:pb-16">
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {resources.map((resource) => (
-          <ResourceLinkCard
-            key={resource.title}
-            title={resource.title}
-            description={resource.description}
-            href={resource.href}
-          />
-        ))}
-      </div>
+      <section className="bg-soft-neutral py-12 md:py-16 px-4 sm:px-6 lg:px-8">
+        <div className="content-hero mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {resources.map((resource) => (
+              <ResourceLinkCard
+                key={resource.title}
+                title={resource.title}
+                description={resource.description}
+                href={resource.href}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
 
-      {/* Internal link to Wildfire Resilience */}
-      <div className="mt-12 content-hero mx-auto">
-        <p className="text-body-charcoal text-[17px] leading-relaxed">
-          Want to understand how these resources connect to San Clemente?{" "}
-          <Link href="/wildfire-resilience" className="text-primary-green hover:underline font-medium">
-            Understanding wildfire resilience in San Clemente — local hazard context, defensible space, and community preparedness →
-          </Link>
-        </p>
-      </div>
-      </div>
+      <section className="bg-white py-12 md:py-16 px-4 sm:px-6 lg:px-8">
+        <div className="content-hero mx-auto">
+          <p className="text-body-charcoal text-[17px] leading-relaxed">
+            Want to understand how these resources connect to San Clemente?{" "}
+            <Link href="/wildfire-resilience" className="text-primary-green hover:underline font-medium">
+              Understanding wildfire resilience in San Clemente — local hazard context, defensible space, and community preparedness →
+            </Link>
+          </p>
+        </div>
+      </section>
     </article>
   );
 }

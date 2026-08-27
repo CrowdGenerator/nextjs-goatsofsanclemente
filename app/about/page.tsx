@@ -95,14 +95,14 @@ export default function AboutPage() {
   return (
     <article>
       {/* 1. Page Title */}
-      <section className="py-12 md:py-16 px-4 sm:px-6">
+      <section className="bg-white py-12 md:py-16 px-4 sm:px-6 lg:px-8">
         <div className="content-hero mx-auto">
           <h1>About the Foundation</h1>
         </div>
       </section>
 
       {/* 2. Vision Section */}
-      <section className="py-12 md:py-16 px-4 sm:px-6">
+      <section className="bg-soft-neutral py-12 md:py-16 px-4 sm:px-6 lg:px-8">
         <div className="content-hero mx-auto">
           <VisionCallout label="VISION | THE FUTURE WE SEEK">
             A wildfire-resilient San Clemente where informed residents, healthy
@@ -113,7 +113,7 @@ export default function AboutPage() {
       </section>
 
       {/* 3. Purpose Section */}
-      <section className="py-12 md:py-16 px-4 sm:px-6">
+      <section className="bg-white py-12 md:py-16 px-4 sm:px-6 lg:px-8">
         <div className="content-hero mx-auto">
           <SectionIntro title="PURPOSE | WHY WE EXIST" />
           <p className="text-body-charcoal text-lg leading-relaxed font-semibold mt-4">
@@ -129,7 +129,7 @@ export default function AboutPage() {
       </section>
 
       {/* 4. Mission Section */}
-      <section className="py-12 md:py-16 px-4 sm:px-6">
+      <section className="bg-soft-neutral py-12 md:py-16 px-4 sm:px-6 lg:px-8">
         <div className="content-hero mx-auto">
           <SectionIntro title="MISSION | WHAT WE DO" />
           <p className="text-body-charcoal text-lg leading-relaxed font-semibold mt-4">
@@ -145,10 +145,14 @@ export default function AboutPage() {
       </section>
 
       {/* 5. Guiding Idea */}
-      <GuidingIdeaBanner text="Make wildfire resilience clear, practical, and part of daily life — not only an emergency concern." />
+      <section className="bg-white py-12 md:py-16 px-4 sm:px-6 lg:px-8">
+        <div className="content-hero mx-auto">
+          <GuidingIdeaBanner text="Make wildfire resilience clear, practical, and part of daily life — not only an emergency concern." />
+        </div>
+      </section>
 
       {/* 6. Organizational Role */}
-      <section className="py-12 md:py-16 px-4 sm:px-6">
+      <section className="bg-soft-neutral py-12 md:py-16 px-4 sm:px-6 lg:px-8">
         <div className="content-hero mx-auto">
           <SectionIntro
             title="How We Work With the City, OCFA, HOAs, Schools and Other Partners"
@@ -161,7 +165,7 @@ export default function AboutPage() {
       </section>
 
       {/* 7. Core Values */}
-      <section className="py-12 md:py-16 px-4 sm:px-6">
+      <section className="bg-white py-12 md:py-16 px-4 sm:px-6 lg:px-8">
         <div className="content-hero mx-auto">
           <SectionIntro title="Core Values" />
         </div>
@@ -171,7 +175,7 @@ export default function AboutPage() {
       </section>
 
       {/* 8. Our Focus */}
-      <section className="py-12 md:py-16 px-4 sm:px-6">
+      <section className="bg-soft-neutral py-12 md:py-16 px-4 sm:px-6 lg:px-8">
         <div className="content-hero mx-auto">
           <SectionIntro title="Our Focus" />
           <p className="text-body-charcoal text-[17px] leading-relaxed mt-4">
@@ -188,7 +192,7 @@ export default function AboutPage() {
       </section>
 
       {/* 9. Board / Leadership */}
-      <section className="py-12 md:py-16 px-4 sm:px-6 bg-soft-neutral">
+      <section className="bg-white py-12 md:py-16 px-4 sm:px-6 lg:px-8">
         <div className="content-hero mx-auto">
           <SectionIntro title="Leadership" />
         </div>

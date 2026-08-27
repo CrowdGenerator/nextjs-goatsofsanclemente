@@ -28,54 +28,67 @@ export const metadata: Metadata = {
 export default function ProgramsPage() {
   return (
     <article>
-      <section className="py-12 md:py-16 px-4 sm:px-6 lg:px-8">
+      {/* Section 1: Page Title */}
+      <section className="bg-white py-12 md:py-16 px-4 sm:px-6 lg:px-8">
         <div className="content-hero mx-auto">
           <h1>Programs</h1>
         </div>
       </section>
-      <div className="content-hero mx-auto px-4 sm:px-6 lg:px-8 pb-12 md:pb-16">
 
-      <FutureProgramNotice className="mb-12" />
+      {/* Section 2: Future Program Notice */}
+      <section className="bg-soft-neutral py-12 md:py-16 px-4 sm:px-6 lg:px-8">
+        <div className="content-hero mx-auto">
+          <FutureProgramNotice />
+        </div>
+      </section>
 
-      <div className="space-y-8">
-        <ProgramCard
-          title="Community Education and Preparedness"
-          description="In time, we may offer wildfire community education workshops on home hardening San Clemente, defensible space, Zone Zero wildfire preparedness, evacuation plans, and home emergency plans. We may help neighborhoods learn about Firewise USA San Clemente and plan simple wildfire safety steps together."
-          isFuture={true}
-          headingLevel="h2"
-        />
+      {/* Section 3: Program Cards */}
+      <section className="bg-white py-12 md:py-16 px-4 sm:px-6 lg:px-8">
+        <div className="content-hero mx-auto">
+          <div className="space-y-8">
+            <ProgramCard
+              title="Community Education and Preparedness"
+              description="In time, we may offer wildfire community education workshops on home hardening San Clemente, defensible space, Zone Zero wildfire preparedness, evacuation plans, and home emergency plans. We may help neighborhoods learn about Firewise USA San Clemente and plan simple wildfire safety steps together."
+              isFuture={true}
+              headingLevel="h2"
+            />
 
-        <ProgramCard
-          title="Environmental Education and Stewardship"
-          description="We may share information about native plants, water-wise yards, and landscapes that can better handle fire. With skilled partners, we may offer lessons for residents, HOAs, landscape companies, and public works staff on habitat care, erosion, careful clearing, and native plant protection."
-          isFuture={true}
-          headingLevel="h2"
-        />
+            <ProgramCard
+              title="Environmental Education and Stewardship"
+              description="We may share information about native plants, water-wise yards, and landscapes that can better handle fire. With skilled partners, we may offer lessons for residents, HOAs, landscape companies, and public works staff on habitat care, erosion, careful clearing, and native plant protection."
+              isFuture={true}
+              headingLevel="h2"
+            />
 
-        <ProgramCard
-          title="Youth and Career Learning"
-          description="With partner groups, schools and youth may join outdoor learning, FFA, 4-H, service, summer, internship, and leadership programs. These programs may cover gardens, animal care, targeted grazing, plant care, natural resources, education, and public service."
-          isFuture={true}
-          headingLevel="h2"
-        />
-      </div>
+            <ProgramCard
+              title="Youth and Career Learning"
+              description="With partner groups, schools and youth may join outdoor learning, FFA, 4-H, service, summer, internship, and leadership programs. These programs may cover gardens, animal care, targeted grazing, plant care, natural resources, education, and public service."
+              isFuture={true}
+              headingLevel="h2"
+            />
+          </div>
+        </div>
+      </section>
 
-      {/* Get Involved CTA */}
-      <div className="mt-12 bg-pale-green rounded-lg p-6 sm:p-8 text-center">
-        <h2 className="text-primary-green font-bold text-xl mb-3">
-          Want to help build these programs?
-        </h2>
-        <p className="text-body-charcoal text-[17px] leading-relaxed mb-6 max-w-[600px] mx-auto">
-          Our wildfire community education and stewardship programs depend on
-          volunteers, partners, and community interest. Want to help? Get
-          involved with the Foundation and support San Clemente wildfire
-          preparedness.
-        </p>
-        <Link href="/get-involved" className="btn-primary">
-          Get Involved
-        </Link>
-      </div>
-      </div>
+      {/* Section 4: Get Involved CTA */}
+      <section className="bg-soft-neutral py-12 md:py-16 px-4 sm:px-6 lg:px-8">
+        <div className="content-hero mx-auto">
+          <div className="bg-pale-green rounded-lg p-6 sm:p-8 text-center">
+            <h2 className="text-primary-green font-bold text-xl mb-3">
+              Want to help build these programs?
+            </h2>
+            <p className="text-body-charcoal text-[17px] leading-relaxed mb-6 max-w-[600px] mx-auto">
+              Our wildfire community education and stewardship programs depend on
+              volunteers, partners, and community interest. Want to help? Get
+              involved with the Foundation and support San Clemente wildfire
+              preparedness.
+            </p>
+            <Link href="/get-involved" className="btn-primary">
+              Get Involved
+            </Link>
+          </div>
+        </div>
+      </section>
     </article>
   );
 }
