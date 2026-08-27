@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import ResourceLinkCard from "../components/ResourceLinkCard";
 
 export const metadata: Metadata = {
@@ -84,6 +85,16 @@ export default function ResourcesPage() {
             href={resource.href}
           />
         ))}
+      </div>
+
+      {/* Internal link to Wildfire Resilience */}
+      <div className="mt-12 max-w-[820px] mx-auto">
+        <p className="text-body-charcoal text-[17px] leading-relaxed">
+          Want to understand how these resources connect to San Clemente?{" "}
+          <Link href="/wildfire-resilience" className="text-primary-green hover:underline font-medium">
+            Understanding wildfire resilience in San Clemente — local hazard context, defensible space, and community preparedness →
+          </Link>
+        </p>
       </div>
       </div>
     </article>

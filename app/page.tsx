@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Hero from "./components/Hero";
 import SectionIntro from "./components/SectionIntro";
 import LocalContextPanel from "./components/LocalContextPanel";
@@ -11,12 +12,12 @@ import CoreValueGrid from "./components/CoreValueGrid";
 export const metadata: Metadata = {
   title: "San Clemente Wildfire Resilience Foundation | Preparedness, Prevention & Community Action",
   description:
-    "A citizen-led San Clemente nonprofit focused on wildfire prevention, preparedness, environmental stewardship, trusted education, and community action.",
+    "A citizen-led San Clemente nonprofit focused on wildfire prevention, San Clemente wildfire preparedness, defensible space, home hardening, Firewise USA, environmental stewardship, and community action.",
   alternates: { canonical: "/" },
   openGraph: {
     title: "San Clemente Wildfire Resilience Foundation | Preparedness, Prevention & Community Action",
     description:
-      "A citizen-led San Clemente nonprofit focused on wildfire prevention, preparedness, environmental stewardship, trusted education, and community action.",
+      "A citizen-led San Clemente nonprofit focused on wildfire prevention, San Clemente wildfire preparedness, defensible space, home hardening, Firewise USA, environmental stewardship, and community action.",
     url: "https://goatsofsanclemente.com/",
     type: "website",
     images: [{ url: "/scwrf-logo.png", alt: "San Clemente Wildfire Resilience Foundation" }],
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "San Clemente Wildfire Resilience Foundation | Preparedness, Prevention & Community Action",
     description:
-      "A citizen-led San Clemente nonprofit focused on wildfire prevention, preparedness, environmental stewardship, trusted education, and community action.",
+      "A citizen-led San Clemente nonprofit focused on wildfire prevention, San Clemente wildfire preparedness, defensible space, home hardening, Firewise USA, environmental stewardship, and community action.",
     images: ["/scwrf-logo.png"],
   },
 };
@@ -46,7 +47,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <SectionIntro
             title="Why a Grassroots Wildfire Resilience Organization"
-            subtitle="San Clemente neighborhoods sit near coastal canyons, open space, and wildland plants. Public agencies provide expertise, emergency response, and public safety. But many choices that shape wildfire safety happen at homes, schools, businesses, HOAs, and open spaces. These choices matter every day, long before a fire starts."
+            subtitle="San Clemente neighborhoods sit near coastal canyons, open space, and wildland plants. Public agencies provide expertise, emergency response, and public safety. But many choices that shape San Clemente wildfire preparedness happen at homes, schools, businesses, HOAs, and open spaces. These choices matter every day, long before a fire starts."
           />
 
           <LocalContextPanel
@@ -76,12 +77,18 @@ export default function Home() {
 
           <PracticalStepsList
             items={[
-              "Home hardening, defensible space, Zone Zero, fuel reduction, and home emergency plans.",
-              "Careful open-space management that removes dangerous and invasive plants while protecting native habitat.",
+              "Home hardening San Clemente, defensible space, Zone Zero wildfire preparedness, fuel reduction, and home emergency plans.",
+              "Careful open-space management that removes dangerous and invasive plants while supporting native habitat wildfire resilience.",
               "Native plant care that supports habitat, healthy soil, water savings, and erosion control.",
-              "Neighborhoods and HOAs taking practical steps toward Firewise USA® recognition.",
+              "Neighborhoods and HOAs taking practical steps toward Firewise USA San Clemente recognition.",
             ]}
           />
+
+          <p className="mt-6 text-body-charcoal text-[17px] leading-relaxed">
+            <Link href="/wildfire-resilience" className="text-primary-green hover:underline font-medium">
+              Learn more about San Clemente wildfire resilience and what it means for your neighborhood →
+            </Link>
+          </p>
         </div>
       </section>
 
@@ -163,6 +170,12 @@ export default function Home() {
           <div className="mt-10">
             <FutureProgramNotice />
           </div>
+
+          <p className="mt-8 text-body-charcoal text-[17px] leading-relaxed">
+            <Link href="/programs" className="text-primary-green hover:underline font-medium">
+              Explore all the programs we hope to build for San Clemente wildfire preparedness →
+            </Link>
+          </p>
         </div>
       </section>
 

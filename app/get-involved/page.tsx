@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import SectionIntro from "../components/SectionIntro";
 import VolunteerCTA from "../components/VolunteerCTA";
 
@@ -17,8 +18,8 @@ export default function GetInvolvedPage() {
       <section className="py-10 md:py-16">
         <SectionIntro title="Volunteer With Us" />
         <p className="text-muted-gray text-[17px] leading-[1.6] max-w-[680px]">
-          The Foundation is building a network of dedicated volunteers who care
-          about wildfire resilience in San Clemente. Every volunteer role will
+          The Foundation is building a network of dedicated wildfire volunteers in San Clemente who care
+          about wildfire resilience. Every volunteer role will
           have a clear purpose, safe steps, and responsible leaders. We use time,
           money, and other resources with care.
         </p>
@@ -26,9 +27,31 @@ export default function GetInvolvedPage() {
           We start with work we can do well. We learn as we go and grow only when
           we have the people, partners, and funds to do it right.
         </p>
+        <p className="mt-4 text-muted-gray text-[17px] leading-[1.6] max-w-[680px]">
+          Not sure where to start?{" "}
+          <Link href="/wildfire-resilience" className="text-primary-green hover:underline font-medium">
+            Learn about wildfire resilience in San Clemente
+          </Link>{" "}
+          or{" "}
+          <Link href="/programs" className="text-primary-green hover:underline font-medium">
+            see the programs we hope to build
+          </Link>.
+        </p>
         <div className="mt-8">
           <VolunteerCTA text="Volunteer With Us" href="/contact" />
         </div>
+      </section>
+
+      {/* Support Us */}
+      <section className="py-10 md:py-16">
+        <SectionIntro title="Support the Foundation" />
+        <p className="text-muted-gray text-[17px] leading-[1.6] max-w-[680px]">
+          You can also support San Clemente wildfire resilience by{" "}
+          <Link href="/donate" className="text-primary-green hover:underline font-medium">
+            making a donation
+          </Link>. Your contribution helps us build community education,
+          environmental stewardship, and youth learning programs.
+        </p>
       </section>
 
       {/* Community & Partner Interest Form */}

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Image from "next/image";
 import VisionCallout from "../components/VisionCallout";
 import GuidingIdeaBanner from "../components/GuidingIdeaBanner";
@@ -177,6 +178,11 @@ export default function AboutPage() {
             We focus on San Clemente. We connect residents and partners, support
             safe volunteer work, and directly promote wildfire prevention,
             preparedness, education, and care for the environment.
+          </p>
+          <p className="mt-4 text-body-charcoal text-[17px] leading-relaxed">
+            <Link href="/wildfire-resilience" className="text-primary-green hover:underline font-medium">
+              Learn more about wildfire resilience in San Clemente — local hazard context, defensible space, and home hardening →
+            </Link>
           </p>
         </div>
       </section>

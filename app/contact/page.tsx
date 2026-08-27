@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, type FormEvent, type ChangeEvent } from "react";
-import type { Metadata } from "next";
+import Link from "next/link";
 import SectionIntro from "../components/SectionIntro";
 
 /* ------------------------------------------------------------------
@@ -205,6 +205,13 @@ export default function ContactPage() {
               </button>
             </div>
           </form>
+
+          <p className="mt-8 text-body-charcoal text-[17px] leading-relaxed">
+            Looking for other ways to help?{" "}
+            <Link href="/get-involved" className="text-primary-green hover:underline font-medium">
+              Get involved as a wildfire volunteer in San Clemente →
+            </Link>
+          </p>
         </div>
       </section>
     </article>

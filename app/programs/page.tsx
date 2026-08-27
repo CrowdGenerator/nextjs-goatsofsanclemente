@@ -1,16 +1,17 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import FutureProgramNotice from "../components/FutureProgramNotice";
 import ProgramCard from "../components/ProgramCard";
 
 export const metadata: Metadata = {
   title: "Programs | San Clemente Wildfire Resilience Foundation",
   description:
-    "Explore future community education, environmental stewardship, and youth learning programs being developed by the San Clemente Wildfire Resilience Foundation.",
+    "Explore future wildfire community education, environmental stewardship, and youth learning programs for San Clemente wildfire preparedness being developed by the San Clemente Wildfire Resilience Foundation.",
   alternates: { canonical: "/programs" },
   openGraph: {
     title: "Programs | San Clemente Wildfire Resilience Foundation",
     description:
-      "Explore future community education, environmental stewardship, and youth learning programs being developed by the San Clemente Wildfire Resilience Foundation.",
+      "Explore future wildfire community education, environmental stewardship, and youth learning programs for San Clemente wildfire preparedness being developed by the San Clemente Wildfire Resilience Foundation.",
     url: "https://goatsofsanclemente.com/programs",
     type: "website",
     images: [{ url: "/scwrf-logo.png", alt: "San Clemente Wildfire Resilience Foundation" }],
@@ -19,7 +20,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Programs | San Clemente Wildfire Resilience Foundation",
     description:
-      "Explore future community education, environmental stewardship, and youth learning programs being developed by the San Clemente Wildfire Resilience Foundation.",
+      "Explore future wildfire community education, environmental stewardship, and youth learning programs for San Clemente wildfire preparedness being developed by the San Clemente Wildfire Resilience Foundation.",
     images: ["/scwrf-logo.png"],
   },
 };
@@ -39,7 +40,7 @@ export default function ProgramsPage() {
       <div className="space-y-8">
         <ProgramCard
           title="Community Education and Preparedness"
-          description="In time, we may offer workshops on home hardening, defensible space, Zone Zero, evacuation plans, and home emergency plans. We may help neighborhoods learn about Firewise USA® and plan simple wildfire safety steps together."
+          description="In time, we may offer wildfire community education workshops on home hardening San Clemente, defensible space, Zone Zero wildfire preparedness, evacuation plans, and home emergency plans. We may help neighborhoods learn about Firewise USA San Clemente and plan simple wildfire safety steps together."
           isFuture={true}
           headingLevel="h2"
         />
@@ -57,6 +58,22 @@ export default function ProgramsPage() {
           isFuture={true}
           headingLevel="h2"
         />
+      </div>
+
+      {/* Get Involved CTA */}
+      <div className="mt-12 bg-pale-green rounded-lg p-6 sm:p-8 text-center">
+        <h2 className="text-primary-green font-bold text-xl mb-3">
+          Want to help build these programs?
+        </h2>
+        <p className="text-body-charcoal text-[17px] leading-relaxed mb-6 max-w-[600px] mx-auto">
+          Our wildfire community education and stewardship programs depend on
+          volunteers, partners, and community interest. Want to help? Get
+          involved with the Foundation and support San Clemente wildfire
+          preparedness.
+        </p>
+        <Link href="/get-involved" className="btn-primary">
+          Get Involved
+        </Link>
       </div>
       </div>
     </article>

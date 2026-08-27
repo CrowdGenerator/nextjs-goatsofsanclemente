@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Image from "next/image";
 import PartnerRoleTable from "../components/PartnerRoleTable";
 import PartnerCTA from "../components/PartnerCTA";
@@ -112,6 +113,11 @@ export default function PartnersPage() {
           can reach more people. San Clemente can build a shared culture of
           safety, care, and preparation without copying the work of public
           agencies.
+        </p>
+        <p className="mt-4 text-body-charcoal text-[17px] leading-[1.6] max-w-[680px]">
+          <Link href="/get-involved" className="text-primary-green hover:underline font-medium">
+            Interested in partnering or volunteering? Get involved with the Foundation →
+          </Link>
         </p>
       </section>
 
